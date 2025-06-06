@@ -50,9 +50,6 @@ document.querySelectorAll(".price a").forEach(btn => {
   });
 });
 
-document.querySelector("footer").innerHTML =
-  `© ${new Date().getFullYear()} JZ Math &nbsp;·&nbsp; NIP __________ &nbsp;·&nbsp; IG @jzmath`;
-
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");

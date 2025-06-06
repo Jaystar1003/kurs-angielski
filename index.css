@@ -109,7 +109,7 @@
 
 :root {
   --accent:#C62828;
-  --muted: linear-gradient(135deg, #FBEAEA, #FFF5F0);; /* was #F8F9FA*/
+  --muted: linear-gradient(135deg, #FBEAEA, #FFF5F0); /* was #F8F9FA*/
   --shadow:0 6px 18px rgba(0,0,0,.08);
   --radius:14px;
 }
@@ -289,7 +289,7 @@ font-size:18px
 .okursie-block.card h3 {
   color: #D9412F;
   margin-bottom: 14px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .okursie-block.card:hover {
@@ -589,8 +589,8 @@ cursor:pointer
 }
 
 footer {
-background:#000;
-color:#fff;
+background: linear-gradient(135deg, #FBEAEA, #FFF5F0);
+color:#222;
 text-align:center;
 padding:32px;
 font-size:14px
