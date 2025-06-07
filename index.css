@@ -232,25 +232,26 @@ color:var(--accent);
   font-size: 14px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
 .hero {
   padding:96px 8% 120px;
-  background: linear-gradient(135deg, #C62828 0%, #F08080 100%);
-  color: #FFFFFF;
+  background: url("background.png") no-repeat right bottom / contain,
+    linear-gradient(135deg, #FBEAEA, #FFF5F0); /*linear-gradient(90deg,rgba(130, 12, 12, 1) 0%, rgba(209, 61, 61, 1) 100%);*/
+  color: var(--accent);
   display:flex;
   flex-direction:column;
   align-items:center;
-  text-align:center
+  text-align:center;
 }
 
 .hero h1 {
-font-size:clamp(2.2rem,4vw,3rem);
-margin-bottom:16px;
-font-weight:700;
-color: #FFFFFF;
+  font-size:clamp(2.2rem,4vw,3rem);
+  margin-bottom:16px;
+  font-weight:700;
+  color: var(--accent);
 }
 
 .hero p {
@@ -476,18 +477,17 @@ margin:4px 0
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
-  border: 3px solid var(--yellow);
+  border: 3px solid var(--accent);
   padding: 40px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   background: white;
-  border:3px solid var(--accent);
 }
 
 #cena .price h3 {
   font-size: 2.2rem;
   margin-bottom: 16px;
-  color: var(--yellow);
+  color: var(--accent);
 }
 
 #cena .price p {
@@ -529,7 +529,7 @@ margin:4px 0
 
 .faq-item h3 {
   font-size: 1.1rem;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -553,7 +553,7 @@ margin:4px 0
 }
 
 .omnie-img img {
-  width: 240px;
+  width: 300px; /*240px*/
   max-width: 100%;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
