@@ -25,7 +25,7 @@
     <a href="#cena" class="nav-link">Cennik</a>
     <a href="#faq" class="nav-link">FAQ</a>
   </div>
-  <a href="#kontakt" class="nav-cta">Zapisz się!</a>
+  <a href="#kontakt" class="nav-cta">Zapisz&nbsp;się!</a>
   <button class="burger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -64,7 +64,11 @@
       </div>
     </div>
   </div>
-  <h2><small><small><- Przewiń -></small></small></h2>
+  <h2><small><small>
+    <img src="left.png" alt="Left arrow" style="height: 20px; width:20px;">
+    Przewiń
+    <img src="right.png" alt="Right arrow" style="height: 20px; width:20px;">
+  </small></small></h2>
 </section>
 
 
@@ -178,9 +182,15 @@
 <section id="kontakt" data-animate>
   <h2>Skontaktuj się</h2>
   <form action="https://formspree.io/f/manjqbwo" method="POST">
-    <input type="text" name="name" placeholder="Imię i nazwisko" required>
-    <input type="email" name="email" placeholder="E-mail" required>
-    <textarea name="message" rows="4" placeholder="Krótka wiadomość"></textarea>
+    <label>
+      <input type="text" name="name" placeholder="Imię i nazwisko" required>
+    </label>
+    <label>
+      <input type="email" name="email" placeholder="E-mail" required>
+    </label>
+    <label>
+      <textarea name="message" rows="4" placeholder="Krótka wiadomość"></textarea>
+    </label>
     <button class="btn" type="submit" style="float: right;">Wyślij</button>
   </form>
 </section>
