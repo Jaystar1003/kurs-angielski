@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         io.unobserve(entry.target);       // animuje się tylko raz
       }
     });
-  },{threshold:.2});  // uruchom gdy 20 % elementu w widoku
+  },{threshold:.2});  // uruchom, gdy 20% elementu w widoku
 
   items.forEach(el=>io.observe(el));
 });
@@ -56,5 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   burger.addEventListener("click", () => {
     nav.classList.toggle("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (e) {
+    setTimeout(() => {
+      form.reset(); // wyczyść formularz po krótkim czasie
+    }, 100); // wystarczy chwila, by wysłać dane
   });
 });

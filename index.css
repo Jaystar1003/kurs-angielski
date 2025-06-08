@@ -150,9 +150,8 @@ color: #D9412F;
 }
 
 .nav-cta {
-margin-left:auto;
-padding:10px 22px;
-
+  margin-left:auto;
+  padding:10px 22px;
   display: inline-block;
   border-radius: var(--radius);
   background: #D9412F;
@@ -163,12 +162,12 @@ padding:10px 22px;
 }
 
 .nav-cta:hover {
-color: white;
-background: #B22F21;
+  color: white;
+  background: #B22F21;
 }
 
 .nav-link:hover {
-color:var(--accent);
+  color:var(--accent);
 }
 
 .nav-link.active {
@@ -230,7 +229,7 @@ color:var(--accent);
 
 .hero-eyebrow {
   font-size: 14px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 10px;
@@ -298,7 +297,8 @@ font-size:18px
 }
 
 .okursie-scroll::-webkit-scrollbar {
-  display: none; /* ukrycie paska przewijania */
+  color:var(--accent);
+  height: 10px;/* ukrycie paska przewijania */
 }
 
 .okursie-scroll::-webkit-scrollbar-thumb {
@@ -379,6 +379,22 @@ h3 {
   font-size: 1.3rem;
   font-weight: 600;
   color: #C62828;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #C62828;
+  margin-top: 40px;
+}
+
+h5 {
+  font-size: 1.0rem;
+  font-weight: 600;
+  text-align: center;
+  color: #C62828;
+  margin-top: 20px;
 }
 
 
