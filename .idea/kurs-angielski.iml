@@ -8,5 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="4061747" level="application" />
+    <orderEntry type="library" name="stub" level="application" />
+    <orderEntry type="library" name="iubenda_cs" level="application" />
   </component>
 </module>
