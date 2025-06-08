@@ -298,7 +298,7 @@ font-size:18px
 
 .okursie-scroll::-webkit-scrollbar {
   color:var(--accent);
-  height: 10px;/* ukrycie paska przewijania */
+  height: 10px;
 }
 
 .okursie-scroll::-webkit-scrollbar-thumb {
