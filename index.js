@@ -29,18 +29,35 @@ const navLinks = document.querySelectorAll("nav .nav-link");
 
 window.addEventListener("scroll", () => {
   let current = "";
+
+  const kursSection = document.querySelector("#kurs");
+  const kursTop = kursSection.offsetTop;
+
   document.querySelectorAll("section[id]").forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (scrollY >= sectionTop) current = section.getAttribute("id");
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if (pageYOffset >= sectionTop - 120 && pageYOffset < sectionTop + sectionHeight - 120) {
+      current = section.getAttribute("id");
+    }
   });
 
   navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    // SPECJALNE ZACHOWANIE: wyłącz aktywność "O kursie" jeśli jesteśmy w "Dlaczego ten?"
+    if (pageYOffset >= kursTop - 120 && href.includes("okursie")) {
+      link.classList.remove("active");
+      return;
+    }
+
     link.classList.remove("active");
-    if (link.getAttribute("href").includes(current)) {
+    if (href.includes(current)) {
       link.classList.add("active");
     }
   });
 });
+
 
 document.querySelectorAll(".price a").forEach(btn => {
   btn.addEventListener("click", (e) => {
