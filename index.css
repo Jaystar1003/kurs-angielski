@@ -186,6 +186,7 @@ color: #D9412F;
   border: none;
   padding: 10px;
   z-index: 100;
+  transition: 0.3s ease;
 }
 
 .burger span {
@@ -194,6 +195,19 @@ color: #D9412F;
   background: #000;
   display: block;
   transition: 0.3s ease;
+}
+
+/* ZMIANA PO AKTYWACJI (X) */
+.burger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Nawigacja */
