@@ -446,6 +446,23 @@ display:block;
 margin-bottom:12px;
 }
 
+.card:hover img {
+  animation: pulse 1s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 .alt {
 background:var(--muted)
 }
@@ -455,6 +472,10 @@ display:flex;
 flex-wrap:wrap;
 gap:16px;
 justify-content:center
+}
+
+.timeline-elt:hover {
+  animation: pulse 1s ease;
 }
 
 .timeline div {
