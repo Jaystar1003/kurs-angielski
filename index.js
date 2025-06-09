@@ -57,6 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
   burger.addEventListener("click", () => {
     nav.classList.toggle("active");
   });
+  // Zamknij menu po kliknięciu w link (mobilnie)
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+      }
+    });
+  });
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
